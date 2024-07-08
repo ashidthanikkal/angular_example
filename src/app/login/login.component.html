@@ -1,0 +1,13 @@
+<form class="container w-50 border rounded-3 p-5 my-5 text-center shadow">
+    <p>{{data}}</p>
+    <h1 class="p-3">Login</h1>
+    <div class="form-floating mb-3">
+        <input (change)="accessUname($event)"  type="email" class="form-control" id="floatingInput" [placeholder]="secondData">
+        <label for="floatingInput">{{secondData}}</label>
+      </div>
+      <div class="form-floating">
+        <input (change)="accessPsw($event)" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="my-3"><button (click)="login()" class="btn btn-dark">Login</button></div>
+</form>
