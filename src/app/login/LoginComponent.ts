@@ -19,20 +19,22 @@ export class LoginComponent implements OnInit {
   }
 
 
-  login() {
-    alert("login clicked");
+  login(a:any,b:any) {
+    this.uname=a.value
+    this.psw=b.value
+    alert(`${this.uname}...${this.psw}`);
   }
 
-  accessUname(event:any){
-    this.uname=event.target.value
-    console.log(this.uname);
-  }
+  // accessUname(event:any){
+  //   this.uname=event.target.value
+  //   console.log(this.uname);
+  // }
 
-  accessPsw(event:any){
-    this.psw=event.target.value
-    console.log(this.psw);
+  // accessPsw(event:any){
+  //   this.psw=event.target.value
+  //   console.log(this.psw);
     
-  }
+  // }
 
 
 }
